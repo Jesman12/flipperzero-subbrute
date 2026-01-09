@@ -6,7 +6,7 @@
 #include <flipper_format_i.h>
 #include <lib/subghz/subghz_protocol_registry.h>
 // use to clear custom_btn
-#include <lib/subghz/blocks/custom_btn.h>
+//#include <lib/subghz/blocks/custom_btn.h>
 
 #define TAG                               "SubBruteWorker"
 #define SUBBRUTE_TX_TIMEOUT               6
@@ -386,7 +386,7 @@ void subbrute_worker_subghz_transmit(SubBruteWorker* instance, FlipperFormat* fl
     stream_rewind(stream);
     //test_read_full_stream(stream, "Transmit data");
 
-    subghz_custom_btns_reset();
+    //subghz_custom_btns_reset();
 }
 
 void subbrute_worker_send_callback(SubBruteWorker* instance) {
